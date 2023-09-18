@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h1 {
+    text-align: center;
+    color: #1A1A1A;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.app_container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.villas_container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 43rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.villa_container {
+    background-color: white;
+    color: black;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    max-width: 18.8rem;
+    transition: 1s;
+    box-shadow: 2px 7px 41px 0px rgba(0,0,0,0.25);
 }
 
-.card {
-  padding: 2em;
+.villa_container:hover{
+    transform: scale(1.05);
 }
 
-.read-the-docs {
-  color: #888;
+.info_container {
+    display: flex;
+    gap: 0.8rem;
+    color: #101935;
+}
+
+.remove_btn {
+    background: #E63B2E;
+}
+
+form{
+    color: #1A1A1A;
+    text-align: center;
+}
+
+form label{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+    
+form label span{
+    display: block;
+}
+
+form label input, textarea{
+    width: 15rem;
+}
+
+.buttons{
+    gap: 0.8rem;
+}
+
+.hidden{
+    display: none;
 }
